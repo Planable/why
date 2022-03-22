@@ -1,0 +1,19 @@
+{
+  "name": "why-run",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'add tests'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strdr4605/why-run.git"
+  },
+  "author": "Dragoș Străinu @strdr4605",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strdr4605/why-run/issues"
+  },
+  "homepage": "https://github.com/strdr4605/why-run#readme"
+}
