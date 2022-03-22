@@ -1,11 +1,14 @@
 {
   "name": "why-run",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A tool to document you package.json scripts",
   "main": "index.js",
   "bin": {
     "why-run": "index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "prepare": "husky install",
     "test": "echo 'add tests'"
