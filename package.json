@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "why-run": "index.js"
+  },
   "scripts": {
     "test": "echo 'add tests'"
   },
