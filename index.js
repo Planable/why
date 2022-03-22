@@ -2,11 +2,11 @@
 const fs = require("fs");
 const path = require("path");
 
-const packagePath = path.join(__dirname, "./package.json");
+const packagePath = path.join(process.cwd(), "./package.json");
 const package = fs.readFileSync(packagePath);
 const packageObj = JSON.parse(package);
 
-const packageWhyPath = path.join(__dirname, "./package-why.json");
+const packageWhyPath = path.join(process.cwd(), "./package-why.json");
 
 const arg = process.argv[2];
 if (arg === "--init") {
