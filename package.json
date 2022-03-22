@@ -1,6 +1,6 @@
 {
   "name": "why-run",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A tool to document you package.json scripts",
   "main": "index.js",
   "bin": {
