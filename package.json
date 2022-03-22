@@ -1,13 +1,17 @@
 {
   "name": "why-run",
   "version": "0.1.0",
-  "description": "",
+  "description": "A tool to document you package.json scripts",
   "main": "index.js",
   "bin": {
     "why-run": "index.js"
   },
   "scripts": {
+    "prepare": "husky install",
     "test": "echo 'add tests'"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/strdr4605/why-run/issues"
   },
-  "homepage": "https://github.com/strdr4605/why-run#readme"
+  "homepage": "https://github.com/strdr4605/why-run#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "2.6.0"
+  }
 }
