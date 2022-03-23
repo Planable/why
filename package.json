@@ -1,13 +1,11 @@
 {
-  "name": "why-run",
+  "name": "why",
   "version": "0.2.1",
   "description": "A tool to document you package.json scripts",
-  "main": "index.js",
-  "bin": {
-    "why-run": "index.js"
-  },
+  "main": "src/index.js",
+  "bin": "src/index.js",
   "files": [
-    "index.js"
+    "src/index.js"
   ],
   "scripts": {
     "prepare": "husky install",
@@ -19,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strdr4605/why-run.git"
+    "url": "git+https://github.com/strdr4605/npx-why.git"
   },
   "author": "Dragoș Străinu @strdr4605",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strdr4605/why-run/issues"
+    "url": "https://github.com/strdr4605/npx-why/issues"
   },
-  "homepage": "https://github.com/strdr4605/why-run#readme",
+  "homepage": "https://github.com/strdr4605/npx-why#readme",
   "devDependencies": {
     "eslint": "^8.11.0",
     "husky": "^7.0.4",
