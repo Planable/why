@@ -75,7 +75,13 @@ if (!packageScript) {
   );
   return;
 }
-const desc = whyObj["scripts"][scriptName];
+
+const scriptDesc = process.argv[3];
+if (scriptDesc) {
+  whyObj["scripts"][scriptName] = scriptDesc;
+  fs.writeFileSync(packageWhyPath, JSON.stringify(whyObj, undefined, 2));
+}
+const desc = scriptDesc || whyObj["scripts"][scriptName];
 
 console.log(
   "\x1b[33m%s\x1b[0m",
