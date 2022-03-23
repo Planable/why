@@ -1,4 +1,4 @@
-#  why
+# why
 
 A tool to document you package.json scripts
 
@@ -10,6 +10,8 @@ There is no a good solution to comment npm scripts from your package.json.
 This is why `npx why` exists!
 
 ## Demo
+
+![npx why demo](demo.gif)
 
 ## Usage
 
