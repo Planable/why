@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "test": "Description for 'npm run test' command"
+    "prepare": "Description for 'npm run prepare' command",
+    "test": "Will run unit tests"
   }
 }
