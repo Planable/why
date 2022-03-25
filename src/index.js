@@ -22,13 +22,14 @@ if (!arg) {
 
   for (const scriptName of Object.keys(packageScripts)) {
     const desc = whyScriptsDesc[scriptName];
+    const descWithLineBreaks = desc.split("\\n").join("\n  ");
     const packageScript = packageScripts[scriptName];
 
     console.log(`\n\x1b[32m${scriptName}\x1b[0m:`);
     console.log(
       "\x1b[33m%s\x1b[0m",
       `\n  ${
-        desc ||
+        descWithLineBreaks ||
         `Description for '${scriptName}' not found in package-why.json, please ask maintainer to add it`
       }\n`
     );
@@ -82,11 +83,11 @@ if (scriptDesc) {
   fs.writeFileSync(packageWhyPath, JSON.stringify(whyObj, undefined, 2));
 }
 const desc = scriptDesc || whyObj["scripts"][scriptName];
-
+const descWithLineBreaks = desc.split("\\n").join("\n  ");
 console.log(
   "\x1b[33m%s\x1b[0m",
   `\n  ${
-    desc ||
+    descWithLineBreaks ||
     `Description for '${scriptName}' not found in package-why.json, please ask maintainer to add it`
   }\n`
 );
