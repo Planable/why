@@ -1,6 +1,6 @@
 # why
 
-A tool to document you package.json scripts
+A tool to document your package.json scripts
 
 ## Why why?
 
