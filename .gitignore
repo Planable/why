@@ -39,6 +39,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+package-lock.json
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -102,3 +103,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Things that stay in support/root
+/.eslintrc.js
+/.prettierrc.js
+/.lintstagedrc.js
+/.husky
+

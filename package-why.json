@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "prepare": "Description for 'npm run prepare' command",
-    "test": "Will run unit tests"
+    "prepare": "We need to install husky hooks into git hooks.\\nSee https://blog.typicode.com/husky-git-hooks-autoinstall",
+    "preinstall": "This script symlinks config files from support/root",
+    "test": "Description for 'npm run test' command"
   }
 }
