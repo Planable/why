@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
+const omelette = require("omelette");
 
 const packagePath = path.join(process.cwd(), "./package.json");
 const package = fs.readFileSync(packagePath);
 const packageObj = JSON.parse(package);
 
 const packageWhyPath = path.join(process.cwd(), "./package-why.json");
+
+omelette`why2 ${["--init"]}`.setupShellInitFile("~/.zshrc").init();
 
 const arg = process.argv[2];
 if (!arg) {

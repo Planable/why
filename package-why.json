@@ -1,6 +1,6 @@
 {
   "scripts": {
     "prepare": "Description for 'npm run prepare' command",
-    "test": "Will run unit tests"
+    "test": "CCCCC\nTTT"
   }
 }

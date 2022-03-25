@@ -30,5 +30,9 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "2.6.0"
+  },
+  "dependencies": {
+    "@types/omelette": "^0.4.1",
+    "omelette": "^0.4.17"
   }
 }
