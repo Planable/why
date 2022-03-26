@@ -1,15 +1,16 @@
 {
   "name": "why",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A tool to document your package.json scripts",
   "main": "src/index.js",
   "bin": "src/index.js",
   "files": [
-    "src/index.js"
+    "src"
   ],
   "scripts": {
     "prepare": "husky install",
     "preinstall": "./support/scripts/symlink-root.sh",
+    "postinstall": "./src/postinstall.js",
     "test": "echo 'add tests'"
   },
   "repository": {

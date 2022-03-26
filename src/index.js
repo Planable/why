@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const fs = require("fs");
 const path = require("path");
 
@@ -11,7 +12,10 @@ const packageWhyPath = path.join(process.cwd(), "./package-why.json");
 const arg = process.argv[2];
 if (!arg) {
   if (!fs.existsSync(packageWhyPath)) {
-    console.log("package-why.json does not exist, please run npx why --init");
+    console.log(
+      "\x1b[33m%s\x1b[0m",
+      "package-why.json does not exist, please run \x1b[32mnpx why --init"
+    );
     return;
   }
 
@@ -41,7 +45,10 @@ if (!arg) {
 
 if (arg === "--init") {
   if (fs.existsSync(packageWhyPath)) {
-    console.log("package-why.json exists, run npx why <somescript>");
+    console.log(
+      "\x1b[33m%s\x1b[0m",
+      "package-why.json exists, run \x1b[32mnpx why <somescript>"
+    );
     return;
   }
   const newPackageWhyObj = {
