@@ -22,7 +22,7 @@ if (!arg) {
 
   for (const scriptName of Object.keys(packageScripts)) {
     const desc = whyScriptsDesc[scriptName];
-    const descWithLineBreaks = desc.split("\\n").join("\n  ");
+    const descWithLineBreaks = desc?.split("\\n").join("\n  ");
     const packageScript = packageScripts[scriptName];
 
     console.log(`\n\x1b[32m${scriptName}\x1b[0m:`);
@@ -83,7 +83,7 @@ if (scriptDesc) {
   fs.writeFileSync(packageWhyPath, JSON.stringify(whyObj, undefined, 2));
 }
 const desc = scriptDesc || whyObj["scripts"][scriptName];
-const descWithLineBreaks = desc.split("\\n").join("\n  ");
+const descWithLineBreaks = desc?.split("\\n").join("\n  ");
 console.log(
   "\x1b[33m%s\x1b[0m",
   `\n  ${
