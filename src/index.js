@@ -25,16 +25,16 @@ if (!arg) {
     const descWithLineBreaks = desc?.split("\\n").join("\n  ");
     const packageScript = packageScripts[scriptName];
 
-    console.log(`\n\x1b[32m${scriptName}\x1b[0m:`);
+    console.log(
+      `\x1b[1m\x1b[35mnpm run ${scriptName}\x1b[0m: \x1b[32m${packageScript}\x1b[0m`
+    );
     console.log(
       "\x1b[33m%s\x1b[0m",
-      `\n  ${
+      `  ${
         descWithLineBreaks ||
         `Description for '${scriptName}' not found in package-why.json, please ask maintainer to add it`
       }\n`
     );
-    console.log(`  script: \x1b[32m${packageScript}\x1b[0m`);
-    console.log(`  try it: \x1b[35mnpm run ${scriptName}\x1b[0m`);
   }
   return;
 }
@@ -91,5 +91,6 @@ console.log(
     `Description for '${scriptName}' not found in package-why.json, please ask maintainer to add it`
   }\n`
 );
-console.log(`  script: \x1b[32m${packageScript}\x1b[0m`);
-console.log(`  try it: \x1b[35mnpm run ${scriptName}\x1b[0m`);
+console.log(
+  `  \x1b[1m\x1b[35mnpm run ${scriptName}\x1b[0m: \x1b[32m${packageScript}\x1b[0m`
+);
