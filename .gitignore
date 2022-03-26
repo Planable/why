@@ -109,4 +109,5 @@ dist
 /.prettierrc.js
 /.lintstagedrc.js
 /.husky
+/commitlint.config.js
 
