@@ -11,7 +11,7 @@ This is why `npx why` exists!
 
 ## Demo
 
-![npx why demo](demo.gif)
+![npx why demo](support/assets/demo.gif)
 
 ## Usage
 
