@@ -19,3 +19,9 @@ This is why `npx why` exists!
 npx why --init # will create a package-why.json file where you can write docs for your scripts
 npx why test # will display docs for 'npm run test' command
 ```
+
+For better experience install the package as devDependencies:
+
+```bash
+npm install why --save-dev
+```
