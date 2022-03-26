@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "prepare": "We need to install husky hooks into git hooks.\\nSee https://blog.typicode.com/husky-git-hooks-autoinstall",
-    "preinstall": "This script symlinks config files from support/root",
+    "prepare": "This script symlinks config files from support/root.\\n&&\\nWe need to install husky hooks into git hooks.\\nSee https://blog.typicode.com/husky-git-hooks-autoinstall",
+    "postinstall": "Notify devs about npx why",
     "test": "Description for 'npm run test' command"
   }
 }
