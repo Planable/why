@@ -58,7 +58,7 @@ if (arg === "--init") {
   for (const key of Object.keys(packageObj["scripts"])) {
     newPackageWhyObj["scripts"][
       key
-    ] = `Description for 'npm run ${key}' command`;
+    ] = `Description for \`npm run ${key}\` command`;
   }
 
   fs.writeFileSync(
