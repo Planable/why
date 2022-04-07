@@ -8,7 +8,7 @@
     "src"
   ],
   "scripts": {
-    "prepare": "./support/scripts/symlink-root.sh && husky install",
+    "prepare": "npx symlink-config && husky install",
     "postinstall": "./src/postinstall.js",
     "test": "echo 'add tests'"
   },
@@ -29,5 +29,8 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "2.6.0"
+  },
+  "dependencies": {
+    "symlink-config": "^0.1.1"
   }
 }
