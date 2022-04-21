@@ -1,5 +1,11 @@
 # why
 
+![version](https://badgen.net/npm/v/why)
+![npm downloads](https://badgen.net/npm/dm/why)
+![dependents](https://badgen.net/npm/dependents/why)
+![publish](https://badgen.net/packagephobia/publish/why)
+[![Hits-of-Code](https://hitsofcode.com/github/strdr4605/why?branch=master)](https://hitsofcode.com/github/strdr4605/why/view?branch=master)
+
 A tool to document your package.json scripts
 
 ## Why why?
