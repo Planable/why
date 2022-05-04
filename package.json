@@ -14,23 +14,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/strdr4605/why.git"
+    "url": "git+https://github.com/Planable/why.git"
   },
   "author": "Dragoș Străinu @strdr4605",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strdr4605/why/issues"
+    "url": "https://github.com/Planable/why/issues"
   },
-  "homepage": "https://github.com/strdr4605/why#readme",
+  "homepage": "https://github.com/Planable/why#readme",
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "eslint": "^8.11.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
-    "prettier": "2.6.0"
-  },
-  "dependencies": {
-    "symlink-config": "^0.1.1"
+    "prettier": "2.6.0",
+    "symlink-config": "^0.1.2"
   }
 }
